@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sipemandu.utspemrogramanbergerak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="app.yohanesam.utspemrogramanbergerak.DetailActivity"
+            android:parentActivityName="app.yohanesam.utspemrogramanbergerak.DetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.yohanesam.utspemrogramanbergerak.DetailActivity" />
+        </activity>
+        <activity android:name="app.yohanesam.utspemrogramanbergerak.GridActivity"
+            android:parentActivityName="app.yohanesam.utspemrogramanbergerak.GridActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.yohanesam.utspemrogramanbergerak.GridActivity" />
+        </activity>
+        <activity android:name="app.yohanesam.utspemrogramanbergerak.MainActivity"
+            android:parentActivityName="app.yohanesam.utspemrogramanbergerak.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.yohanesam.utspemrogramanbergerak.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
